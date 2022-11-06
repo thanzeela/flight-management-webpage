@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <style>
+   
+   body {
+      background-image: url('https://img.freepik.com/free-photo/high-angle-passport-tickets-arrangement_23-2148786166.jpg?w=1060&t=st=1667761311~exp=1667761911~hmac=f1f97de3c2cfd4ee029ce28c9d09bac345ae1b8b55ccbcf52e425fa0fdefe6e7');
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+    
+
+
+        
+    
+
+
+    form {
+        text-align: right;
+    }
+    input {
+        width: 100px;
+    }
+    </style>
+</head>
+
+<body bgcolor="white">
+    <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href=""><b>LOGIN PAGE</b></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+      </div>
+    </nav>
+</header>
+
+
+
+    
+    
+
+       
+        
+
+            
+                
+                  <div class="login">
+                  <form action="web page.html" method="post" onsubmit="validate()">
+                         <table cellspacing="8" cellpadding="10">
+                                
+            
+                           <tr> <td><label  for="formGroupExampleInput" class="form-label" name="email" id="email">Email  &nbsp;&nbsp; &nbsp;</label></td>
+                            <td><input type="email" id="txtbox" name="email" maxlength="50" minlength="5" required></td>
+                        </tr>
+                        <!-- <br>
+                        <br> -->
+                        
+                        <tr> <td><label>Password</label></td>
+                            <td><input type="password" id="txtbox" name="password" minlength="8" maxlength="25" id="password"required></td></tr>
+                        <!-- <br>
+                        <br> -->
+                        <tr><td><button type="submit" style="margin-left: 150%;">Login</button></td>
+                        <td><a style="color:black; " href="forgot password.html"title= "Forgot password"><b>Forgot password</b></a><br></td></tr>
+
+                    </table>
+                    </form>
+                </div>
+                
+
+                
+
+
+
+            </div>
+            
+           <!-- <div class="row d-flex justify-content-center align-items-center h-100"> -->
+
+            
+</body>
+    
+         <script>
+           
+           function validate(e){
+
+            
+   
+                var email = document.forms[0]['email'];
+                var password = document.forms[0]['password'];
+                
+                var error = document.getElementById('error-messages');
+                if(!email.validity.valid){
+                    error.innerHTML = 'Please enter a valid password';
+                    return false;
+                    
+                }
+                if(!password.validity.valid){
+                    error.innerHTML = 'Please enter a valid password';
+                    return false;
+                }
+               e.preventDefault();
+            } 
+            </script>
+    
+        
+
+    </html>
+
+
+
+
+
+
+  

@@ -1,0 +1,21 @@
+form {
+    overflow: hidden;
+  }
+  input {
+    float: right;
+    clear: both;
+  }
+  .login {
+    width:800px;
+    height:800px;
+    float: center;
+    display: stretch;
+   flex-flow: row wrap;
+  
+ }
+
+ #txtbox {
+    font-size: 9pt;
+    height: 42px;
+    width : 300px;
+}
